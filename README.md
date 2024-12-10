@@ -8,4 +8,4 @@
 
 * ### then just run main.cpp; Enjoy 😊. 
 
-* Note: you can rotate the Dice using the keyboard arrows 
+* Note: you can rotate the Dice using the keyboard arrows.
