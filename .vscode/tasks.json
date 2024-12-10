@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build OpenGL Project",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "-std=c++17",
+                "-I${workspaceFolder}/include",  // Include headers
+                "${workspaceFolder}/src/main.cpp",  // Main file
+                "${workspaceFolder}/src/glad.c",  // GLAD source
+                "-L${workspaceFolder}/lib",  // Library path
+                "-lglfw3dll",  // Link GLFW
+                "-lopengl32",  // Link OpenGL
+                "-o",
+                "${workspaceFolder}/cutable.exe"  // Output executable
+            ],
+            "options": {
+                "cwd": "C:\\msys64\\ucrt64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build task for OpenGL project"
+        }
+    ]
+}
