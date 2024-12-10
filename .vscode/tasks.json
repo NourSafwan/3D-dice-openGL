@@ -4,7 +4,7 @@
         {
             "type": "cppbuild",
             "label": "Build OpenGL Project",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe", // replace (C:\\msys64\\ucrt64\\bin\\g++.exe) with your Compiler path
             "args": [
                 "-g",
                 "-std=c++17",
@@ -18,7 +18,7 @@
                 "${workspaceFolder}/cutable.exe"  // Output executable
             ],
             "options": {
-                "cwd": "C:\\msys64\\ucrt64\\bin"
+                "cwd": "C:\\msys64\\ucrt64\\bin" // replace (C:\\msys64\\ucrt64\\bin) with your Compiler path
             },
             "problemMatcher": [
                 "$gcc"
